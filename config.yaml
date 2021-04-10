@@ -1,7 +1,7 @@
 settings:
   title: 'Status Page'
   url: 'https://status.andp97.dev' # used for Slack messages
-  logo: logo-192x192.png # image in ./public/ folder
+  logo: logo_andrea.png # image in ./public/ folder
   daysInHistogram: 90 # number of days you want to display in histogram
   collectResponseTimes: true # collects avg response times from CRON locations
 
@@ -16,9 +16,9 @@ settings:
 
 monitors:
   - id: andreapavone-com # unique identifier
-    name: andreapavone-com
-    description: 'andreapavone.com' # default=empty
-    url: 'https://andreapavone-com/' # URL to fetch
+    name: andreapavone.com
+    description: 'Personal Web Site' # default=empty
+    url: 'https://andreapavone.com/' # URL to fetch
     method: GET # default=GET
     expectStatus: 200 # operational status, default=200
     followRedirect: false # should fetch follow redirects, default=false
@@ -26,6 +26,6 @@ monitors:
   - id: ip-andreapavone-com
     name: ip.andreapavone.com
     description: 'MyIp Info'
-    url: 'https://eidam/cf-workers-status-page'
+    url: 'https://ip.andreapavone.com'
     method: GET
     expectStatus: 200
