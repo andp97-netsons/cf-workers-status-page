@@ -29,3 +29,11 @@ monitors:
     url: 'https://ip.andreapavone.com'
     method: GET
     expectStatus: 200
+    
+  - id: facebook-com # unique identifier
+    name: facebook.com
+    description: 'Facebook' # default=empty
+    url: 'https://facebook.com/' # URL to fetch
+    method: GET # default=GET
+    expectStatus: 200 # operational status, default=200
+    followRedirect: true # should fetch follow redirects, default=false
